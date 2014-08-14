@@ -1,0 +1,501 @@
+html
+{
+	background-image: url('../images/backgrounds/low_contrast_linen.png');
+	background-repeat: repeat;
+}
+
+/* 700 and smaller screens */
+@media screen and (max-width: 600px){
+	body {
+		width: 90%;
+	}
+
+	.statBox {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
+
+/* Between 700 and 1024 */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+	body {
+		width: 90%;
+	}
+
+	.statBox {
+		width: 40%;
+		margin-left: 5.5%;
+	}
+}
+
+/* 1024 and larger screens */
+@media screen and (min-width: 1025px){
+	body {
+		max-width: 1200px;
+		width: 90%;
+	}
+
+	.statBox {
+		width: 25%;
+		margin-left: 5.5%;
+	}
+}
+
+body 
+{
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	color: white;
+
+	margin: 2% auto;
+	/*width: 1200px;*/
+	clear: both;
+}
+
+.siteHeader {
+	background-color: black;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+#loginInfo {
+	background-color: #666;
+	border: 2px solid #404040;
+	margin: 50px;
+	padding: 25px;
+}
+
+.siteHeader img {
+	width: 100%;
+	height: auto;
+}
+
+.siteHeader img.thin {
+	max-width: 480px;
+}
+
+.siteHeader input {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px;
+	height: 20px;
+}
+
+.siteHeader .submitButton {
+	background-color: #DB6612;
+	border: none;
+	padding: 5px 5px;
+	display: block;
+	margin: 10px auto;
+	margin-bottom: 30px;
+	width: 90%;
+	height: auto;
+	max-width: 300px;
+
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	font-size: 14px;
+}
+
+.siteHeader .submitButton:hover {
+	cursor: pointer;
+}
+
+.warning {
+	border-color: red;
+}
+
+.ui-tooltip {
+	background-color: #666;
+	font-size: 10pt;
+	max-width: 500px;
+	width: 500px;
+}
+
+#profileInfo {
+	float: right;
+}
+
+#profileName {
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+#profileInfo .profileWrapper {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 2px;
+}
+
+#profileInfo img {
+	float: right;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+
+.dropdown {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	width: 200px;
+	border: solid 2px #FFF;
+	background-color: #4C4C4C;
+}
+
+#profileInfo .dropdown {
+	top: 60px;
+	right: 0;
+}
+
+.arrow {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+	border-bottom: 10px solid white;
+}
+
+.downarrow {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;	
+	border-top: 10px solid white;
+}
+
+#profileInfo .arrow {
+	position: absolute;
+	top: -12px;
+	right: 5px;
+}
+
+.dropdown ul {
+	padding: 0;
+	list-style: 0;
+	margin: 0 auto;
+}
+
+.dropdown li {
+	padding: 10px;
+	color: #FFF;
+	cursor: pointer;
+	list-style-type: none;
+}
+
+.dropdown li:hover {
+	background-color: #DB6612;
+}
+
+.dropdown a {
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+#profileInfo .dropdown li {
+	padding: 0px;
+}
+
+.padding-10 {
+	padding: 10px !important;
+}
+
+#profileInfo .dropdown a {
+	padding: 10px;
+	display: block;
+}
+
+.dontDisplay {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.siteNav {
+	position: relative;
+	margin-top: 2%;
+	height: 51px;
+}
+
+.siteNav ul {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.siteNav .tab {
+	text-decoration: none;
+	background-color: #C0C0C0;
+	color: #4C4C4C;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #666;
+	border-bottom: none;
+	padding: 15px;
+	width: 75px;
+	text-align: center;
+	display: block;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+	height: 20px;
+}
+
+.siteNav .tab:hover, .siteNav .tab:active {
+	background-color: #DB6612;
+	color: #FFF;
+	border-color: #DB6612;
+}
+
+.activeTab {
+	background-color: #666 !important;
+	color: #FFF !important;
+	border-color: #666 !important;
+}
+
+.activePane {
+	display: block !important;
+}
+
+.contentPane {
+	display: none;
+}
+
+
+.refresher {
+	cursor: pointer;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.refresher:hover {
+	color: #DB6612;
+}
+
+.orange {
+	color: #DB6612;
+}
+
+.loader {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(128, 128, 128, .8);
+}
+
+.mainContent {
+	padding: 10px;
+	background-color: #666;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.container {
+	position: relative;
+}
+
+.statBox {
+	margin-top: 25px;
+	padding: 5px;
+	display: inline-block;
+	background-color: #4C4C4C;
+}
+
+.statBox table {
+	width: 100%;
+}
+
+.right {
+	text-align: right;
+}
+
+.statBox img {
+	width: 100%;
+	height: auto;
+	background-color: #333333;
+}
+
+.statBox header {
+	width: 100%;
+	padding: 5px 0px;
+	margin-bottom: 5px;
+	background-color: #DB6612;
+	text-align: center;
+}
+
+.generalStatBox {
+	width: 45%;
+	display: inline-block;
+	border: 1px solid white;
+}
+
+.generalStatBox table {
+	width: 100%;
+}
+
+.siteFooter {
+	background-color: #666;
+	border-radius: 5px;
+	margin-top: 2%;
+	padding: 5px;
+}
+
+#footer-api {
+	text-align: right;
+}
+
+.chart {
+	margin: 0 auto;
+}
+
+h1 {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+.topStat h4 {
+	margin-bottom: 0px;
+}
+
+.sortHeader {
+	background-color: #4C4C4C;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+.sortHeader h2 {
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.sortHeader .dropdown {
+	background-color: #C0C0C0;
+	border: none;
+	padding: 5px;
+}
+
+.sortHeader .dropdown li {
+	color: #4C4C4C;
+}
+
+.sortHeader .dropdown li:hover {
+	color: #FFFFFF; 
+}
+
+.picker {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.filter {
+	position: relative;
+}
+
+.filter .dropdown {
+	left: -10px;
+}
+
+.sort{
+	float: right;
+	position: relative;
+}
+
+.sort .dropdown {
+	right: -10px;
+}
+
+.col1 {
+	display: inline-block;
+	width: 33%;
+}
+
+.half {
+	width: 50%;
+}
+
+.third {
+	width: 33%;
+}
+
+.col2 {
+	display: inline-block;
+}
+
+.col2.third {
+	text-align: center;
+}
+
+.fa-caret-down {
+	margin-left: 5px;
+}
+
+#generalMain {
+	display: inline-block;
+	width: 67%;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+#generalSide {
+	display: inline-block;
+	margin-top: 10px;
+	width: 32%;
+	border-left: 2px solid #4C4C4C;
+	padding-bottom: 20px;
+}
+
+#generalSide h4 {
+	text-align: center;
+	margin: 20px 0px;
+}
+
+#generalSide .statBox {
+	width: 80%;
+	margin: 0px 10%;
+}
+
+.clearFloat {
+	clear: both;
+}
+
+.row {
+	border-bottom: 2px solid #707070;
+	width: 80%;
+	padding: 5px;
+	padding-top: 0px;
+	margin-bottom: 5px;
+}
+
+.sortHeader.general {
+	height: 44px;
+}
+
+.row .col2 {
+	text-align: right;
+}
+
+.row .half {
+	width: 49%;
+}
