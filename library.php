@@ -1,5 +1,5 @@
 <?php
-include_once("db_connect.php");
+include_once("secretstuff.php");
 
 $weaponList = array(
 	"ak47" => array("AK-47", "rifle"),
@@ -65,7 +65,7 @@ function isTracked() {
 	global $SERVER, $USERNAME, $PASSWORD, $DATABASE;
 	$db_connection = new mysqli($SERVER, $USERNAME['super'], $PASSWORD['super'], $DATABASE);
 	if (mysqli_connect_errno()) {
-		echo("Can't connect to MySQL Server. Error code: " .  mysqli_connect_error());
+		echo("Can't connect to database");
 		return null;
 	}
 	$tracked = false;
